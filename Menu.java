@@ -55,20 +55,21 @@ public class Menu{
 				do{
 					choice = IO.readInt();
 				}while(choice < 1 || choice > 8);
-				rulesRead.Read(choice);
+				Rulesread.Read(choice);
+				continue;
 			}
 			if(choice == 2){
-				tmp = pet.Goldfish();
+				tmp = Pet.Goldfish();
 				goldfishTurns = goldfishTurns + tmp;
 				gCount++;
 			}
 			if(choice == 3){
-				tmp = pet.Turtle();
+				tmp = Pet.Turtle();
 				turtleTurns = turtleTurns + tmp;
 				tCount++;
 			}
 			if(choice == 4){
-				snake = pet.Snake();
+				snake = Pet.Snake();
 				if(snake[0] == 1){
 					snakeWins++;
 				}else{
@@ -78,7 +79,7 @@ public class Menu{
 				sCount++;
 			}
 			if(choice == 5){
-				para = pet.Parakeet();
+				para = Pet.Parakeet();
 				if(para[0] == 1){
 					parakeetWins++;
 				}else{
@@ -89,7 +90,7 @@ public class Menu{
 
 			}
 			if(choice == 6){
-				rabbit = pet.Rabbit();
+				rabbit = Pet.Rabbit();
 				if(rabbit[0] == 1){
 					rabbitWins++;
 				}else{
@@ -99,7 +100,7 @@ public class Menu{
 				rabCount++;
 			}
 			if(choice == 7){
-				rat = pet.Rabbit();
+				rat = Pet.Rabbit();
 				if(rat[0] == 1){
 					ratWins++;
 				}else{
@@ -109,7 +110,7 @@ public class Menu{
 				ratCount++;
 			}
 			if(choice == 8){
-				dog = pet.Dog();
+				dog = Pet.Dog();
 				if(dog[0] == 1){
 					dogWins++;
 				}else{
